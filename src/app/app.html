@@ -23,12 +23,12 @@
                 @for (item of employeeList; track $index) {
                 <tr>
                   <td>{{ $index + 1 }}</td>
-                  <td>{{ item.empname }}</td>
-                  <td>{{ item.empemail }}</td>
-                  <td>{{ item.empphone }}</td>
-                  <td>{{ item.empcity }}</td>
-                  <td>{{ item.empstate }}</td>
-                  <td>{{ item.empaddress }}</td>
+                  <td>{{ item.empName }}</td>
+                  <td>{{ item.empEmail }}</td>
+                  <td>{{ item.empPhone }}</td>
+                  <td>{{ item.empCity }}</td>
+                  <td>{{ item.empState }}</td>
+                  <td>{{ item.empAddress }}</td>
                 }
               </tbody>
             </table>
@@ -48,31 +48,31 @@
             <form [formGroup]="employeeForm">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" class="form-control" formControlName="empname" />
+                <input type="text" id="name" class="form-control" formControlName="empName" />
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" formControlName="empemail" />
+                <input type="email" id="email" class="form-control" formControlName="empEmail" />
               </div>
               <div class="form-group">
                 <label for="phone">Phone</label>
-                <input type="text" id="phone" class="form-control" formControlName="empphone" />
+                <input type="text" id="phone" class="form-control" formControlName="empPhone" />
               </div>
               <div class="form-group">
                 <label for="city">City</label>
-                <input type="text" id="city" class="form-control" formControlName="empcity" />
+                <input type="text" id="city" class="form-control" formControlName="empCity" />
               </div>
               <div class="form-group">
                 <label for="state">State</label>
-                <input type="text" id="state" class="form-control" formControlName="empstate" />
+                <input type="text" id="state" class="form-control" formControlName="empState" />
               </div>
               <div class="form-group">
                 <label for="pinCode">Pin Code</label>
-                <input type="text" id="pinCode" class="form-control" formControlName="emppincode" />
+                <input type="text" id="pinCode" class="form-control" formControlName="empPincode" />
               </div>
               <div class="form-group">
                 <label for="address">Address</label>
-                <textarea id="address" class="form-control" formControlName="empaddress"></textarea>
+                <textarea id="address" class="form-control" formControlName="empAddress"></textarea>
               </div>
               <div class="col-12 pt-2">
                 <button type="reset" class="btn btn-primary">Reset</button>
