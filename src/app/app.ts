@@ -47,8 +47,8 @@ export class App {
       this.employeeForm.controls['empid'].setValue(parseData.length + 1);
       this.employeeList.unshift(this.employeeForm.value);
     } else {
-      this.employeeForm.controls['empid'].setValue(1);
       this.employeeList.unshift(this.employeeForm.value);
     }
+    localStorage.setItem('empData', JSON.stringify(this.employeeList));
   }
 }
